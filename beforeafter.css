@@ -1,0 +1,73 @@
+[data-beforeafter] {
+  position: relative;
+}
+
+[data-beforeafter] > .before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+[data-beforeafter] > .after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+[data-beforeafter] > .divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #292a31;
+  overflow: visible;
+}
+
+[data-beforeafter] > .divider > .dragger {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #292a31;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+[data-beforeafter] > .divider > .dragger::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  width: 10%;
+  height: 10%;
+  background-color: transparent;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+[data-beforeafter] > .divider > .dragger::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+  width: 10%;
+  height: 10%;
+  background-color: transparent;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+/*# sourceMappingURL=beforeafter.css.map */
